@@ -1,0 +1,99 @@
+/* style2.css */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #eee8e8; /* Set a background color */
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 79vh;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.container2 form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Vertical spacing between sections */
+}
+.name, .age {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Add spacing between .name and .age sections */
+    width: 103%;
+}
+.name input, .age input{
+    width: 85%;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input-group label {
+    width: 140px; /* Adjust the width as needed */
+    padding-right: 10px; /* Add some space between label and input */
+}
+
+.input-group input {
+    width: 56%;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Spacing between inputs */
+}
+
+.address input {
+    width: 95%;
+    border-radius: 3px;
+    font-size: 19px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -5%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+} 
+.button input[type="submit"]{
+    padding: 10px; /* Add padding to the input */
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .container2 {   
+        width: 75%;
+        margin: 20% auto 10% auto;
+    }
+    .name, .age {
+        flex-direction: row; /* Align items in a column */
+        align-items: flex-end; /* Align items to the left within columns */
+    }
+
+}
